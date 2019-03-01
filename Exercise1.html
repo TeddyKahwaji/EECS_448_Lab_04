@@ -1,20 +1,18 @@
 
 <html>
   <body>
-    <?php require 'myScript.php';
-
-    ?>
     <?php
-
-
     for ($x =1; $x <=100; $x++ )
     {
+      echo "\n";
       for($j=1; $j<=100; $j++)
       {
-        echo "x"
+        $p = $x * $j;
+        echo "<td>$p<\td>";
       }
     }
 
     ?>
+
   </body>
 </html>
