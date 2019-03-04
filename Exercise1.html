@@ -1,18 +1,24 @@
 
 <html>
   <body>
-    <?php
-    for ($x =1; $x <=100; $x++ )
-    {
-      echo "\n";
-      for($j=1; $j<=100; $j++)
+    <B>Multiplication Table </b><br>
+      <?php
+      echo "<table border=\"1\">";
+
+  for ($x =1; $x <= 100; $x++)
+  {
+
+      echo('<tr>');
+
+      for ($y = 1; $y <= 100; $y++)
       {
-        $p = $x * $j;
-        echo "<td>$p<\td>";
-      }
-    }
+          echo( '<td>' .$x*$y.'</td>');
+        }
+      echo('</tr>');
 
+  }
+
+  echo("</table>");
     ?>
-
   </body>
 </html>
