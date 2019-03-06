@@ -6,43 +6,44 @@
   </head>
 <h1 align="center"> Jayhawk Quiz!! </h1>
   <body>
-    <form action="/Quiz.php">
-    <b>  When was the University of Kansas Founded </b><br>
-      <input type="radio" name="founded" value="1865"> March 21, 1865<br>
-      <input type="radio" name="founded" value="1901">September 21, 1901<br>
-      <input type="radio" name="founded" value="1798"> December 12th, 1798<br>
-      <input type="radio" name="founded" value="2001"> October 21st, 2001 <br>
+    <form action="Quiz.php" method="post" id="quiz">
+    <b>  When was the University of Kansas Founded? </b><br>
+      <input type="radio" name="founded" value="1865" id="question1A"> March 21, 1865<br>
+      <input type="radio" name="founded" value="1901" id="question1B">September 21, 1901<br>
+      <input type="radio" name="founded" value="1798" id="question1C"> December 12th, 1798<br>
+      <input type="radio" name="founded" value="2001" id="question1D"> October 21st, 2001 <br>
 
 
       <br> <br>
       <b>  How many national titles does the University of Kansas have in basketball? </b><br>
-        <input type="radio" name="titles" value="3"> 3 <br>
-        <input type="radio" name="titles" value="5"> 5 <br>
-        <input type="radio" name="titles" value="12"> 12 <br>
-        <input type="radio" name="titles" value="10">10 <br>
+        <input type="radio" name="titles" value="3" id="question2A"> 3 <br>
+        <input type="radio" name="titles" value="5" id="question2B"> 5 <br>
+        <input type="radio" name="titles" value="12" id="question2C"> 12 <br>
+        <input type="radio" name="titles" value="10" id="question2D">10 <br>
 
       <br> <br>
-      <b> Who was the head coach of the University of Kansas basketball team from 1988-2003 </b><br>
-      <input type="radio" name="coach" value="Roy Williams"> Roy Williams  <br>
-      <input type="radio" name="coach" value="Bill Self"> Bill Self <br>
-      <input type="radio" name="coach" value="James Naismith"> James Naismith <br>
-      <input type="radio" name="coach" value="Larry Brown">Larry Brown <br>
+      <b> Who was the head coach of the University of Kansas basketball team from 1988-2003? </b><br>
+      <input type="radio" name="coach" value="Roy Williams" id="question3A"> Roy Williams  <br>
+      <input type="radio" name="coach" value="Bill Self" id="question3B"> Bill Self <br>
+      <input type="radio" name="coach" value="James Naismith" id="question3C"> James Naismith <br>
+      <input type="radio" name="coach" value="Larry Brown" id="question3D">Larry Brown <br>
       <br> <br>
 
 
-      <b> What former KU basketball player holds the all time points scored in a single game (100) </b><br>
-      <input type="radio" name="player" value="Paul Pierce"> Paul Pierce  <br>
-      <input type="radio" name="player" value="Wilt Chamberlain"> Wilt Chamberlain <br>
-      <input type="radio" name="player" value="Danny Manning"> Danny Manning <br>
-      <input type="radio" name="player" value="Andrew Wiggins"> Andrew Wiggins <br>
+      <b> What former KU basketball player holds the all time points scored in a single game (100)? </b><br>
+      <input type="radio" name="player" value="Paul Pierce" id="question4A"> Paul Pierce  <br>
+      <input type="radio" name="player" value="Wilt Chamberlain" id="question4B"> Wilt Chamberlain <br>
+      <input type="radio" name="player" value="Danny Manning" id="question4C"> Danny Manning <br>
+      <input type="radio" name="player" value="Andrew Wiggins" id="question4D"> Andrew Wiggins <br>
       <br><br>
-      <b> What current conference is KU in> </b><br>
-      <input type="radio" name="conference" value="Big 10"> Big 10  <br>
-      <input type="radio" name="conference" value="ACC"> ACC <br>
-      <input type="radio" name="conference" value="SEC"> SEC <br>
-      <input type="radio" name="conference" value="Big 12"> Big 12 <br>
+      <b> What conference is KU in? </b><br>
+      <input type="radio" name="conference" value="Big 10" id="question5A"> Big 10  <br>
+      <input type="radio" name="conference" value="ACC"id="question5B"> ACC <br>
+      <input type="radio" name="conference" value="SEC"id="question5C"> SEC <br>
+      <input type="radio" name="conference" value="Big 12"id="question5D"> Big 12 <br>
       <br>
-      <input type="submit" value="Submit">
+      <input type="submit" name="reg_button" value="Submit">
     </form>
+    <?php include 'Quiz.php';?>
   </body>
 </html>
