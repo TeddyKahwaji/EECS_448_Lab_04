@@ -1,0 +1,89 @@
+
+<html lang="en" dir="ltr">
+  <head>
+
+    <h1 align="center"><w> Kahwaji's Store</w> </h1>
+      <img src= "200px-Kansas_Jayhawks_logo.svg.png"  height="300" width="300" id="Protected" class="center">
+
+   <link rel="stylesheet" href="style.css">
+    <title>Exercise 4</title>
+  </head>
+  <body>
+
+    <script src="formChecker.js">
+    </script>
+    <w>
+  <b>  <h3> Shirts: </h3>  </b>
+    <br>
+      <form action="CustomerBackend.php" method="post">
+      <img src="shirt1.jpg" height="300" width="300" id="image1_shirt">
+        <img src="shirt2.jpg" height="300" width="300" id="image2_shirt">
+        <img src="shirt3.jpg" height="300" width="300" id="image3_shirt">   <img src="shirt4.jpg" height="300" width="300" id="image4_shirt">
+          <img src="shirt5.jpg" height="300" width="300" id="image5_shirt">
+          <br>
+          SELECTION:
+          <br>
+        <select name="Shirts">
+          <option value="Please Select">Choose a shirt!!(:</option>
+          <option value="14.00">Blue KU Print Shirt $14</option>
+          <option value="28.99">White Longsleeve KU Shirt $28.99</option>
+          <option value="500.00">Grey KU Longsleeve Shirt $500.00</option>
+          <option value="900.00">Dark Grey KU logo Shirt $900.00</option>
+          <option value="125.66">Dark Blue Circular Jayhawk Logo $125.66</option>
+        </select>
+        How many:  <input type="number" name="FirstName" id="shirtInput"
+         min="0"  onfocusout="testCheck1()" value="0"><br>
+      <br>
+      <!-- pants -->
+      <b> <h3> Pants: </h3> </b>
+      <img src="pants1.jpg" height="300" width="300" id="image1_pants">
+        <img src="pants2.jpg" height="300" width="300" id="image2_pants">
+          <img src="pants3.jpg" height="300" width="300" id="image3_pants">
+
+          <br>
+          SELECTION:
+          <br>
+        <select name="Pants">
+          <option value="Please Select">Choose a pair of pants!(:</option>
+          <option value="25.00">Black KU Joggers $25.00</option>
+          <option value="16.00">Grey KU sweatpants $16.00</option>
+          <option value="18.00">Dark Blue KU sweapants $18.00</option>
+        </select>
+          How many:  <input type="number" name="FirstName2" value="0"
+          min="0" id="pantsInput" onfocusout="testCheck2()" value="0"><br>
+        <br>
+
+        <!-- jerseys  -->
+          <b> <h3> Jerseys: </h3> </b>
+          <img src="jersey1.jpg" height="300" width="300" id="image1_jersey">
+          <img src="jersey2.jpg" height="300" width="300" id="image2_jersey">
+          <img src="jersey3.jpg" height="300" width="300" id="image3_jersey">
+
+          <br>
+          SELECTION:
+          <br>
+        <select name="Jerseys">
+          <option value="Please Select">Choose a Jersey!(:</option>
+          <option value="25.00">Black KU Joggers $25.00</option>
+          <option value="16.00">Grey KU sweatpants $16.00</option>
+          <option value="18.00">Dark Blue KU sweapants $18.00</option>
+        </select>
+          How many:  <input type="number" name="FirstName3" value="0"
+          min="0" id="jerseyInput" onfocusout="testCheck3()" value="0"><br>
+        <br>
+        <b><h3> Shipping: </h3> </b>
+        <!-- <form id="m_form" > -->
+          Email ad:  <input type="text" name="gimmead" id="eadd" <br> <br>
+          Password:   <input type="password" name="pas" id="pass" <br> <br>
+          <!-- </form>
+          <form action="" method="post"> -->
+          <input type="radio" name="free" value="7Day" id="7"> Free 7 Day  <br>
+          <input type="radio" name="free" value="OverNight" id="50"> $50.00 over night  <br>
+          <input type="radio" name="free" value="three" id="3"> $5.00 three day  <br>
+          <!-- </form> -->
+
+        <input type="submit" name="submit" onclick="addressChecker(); passwordChecker(); shippingChecker();">   <button type="reset" value="Reset" onclick="resetShipping()">Reset</button> <br>
+        </form>
+        </w>
+        </body>
+</html>
