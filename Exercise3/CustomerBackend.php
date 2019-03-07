@@ -34,7 +34,7 @@
     }
     if($shippingSelection=="three")
     {
-      $shippingCost = 3.00;
+      $shippingCost = 5.00;
     }
     $totalCost = $item1_subTotal + $item2_subTotal + $item3_subTotal + $shippingCost;
     $item1 = "Item 1";
