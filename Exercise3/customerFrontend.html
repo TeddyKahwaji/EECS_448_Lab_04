@@ -24,7 +24,7 @@
           SELECTION:
           <br>
         <select name="Shirts">
-          <option value="Please Select">Choose a shirt!!(:</option>
+          <option value="0">Choose a shirt!!(:</option>
           <option value="14.00">Blue KU Print Shirt $14</option>
           <option value="28.99">White Longsleeve KU Shirt $28.99</option>
           <option value="500.00">Grey KU Longsleeve Shirt $500.00</option>
@@ -44,7 +44,7 @@
           SELECTION:
           <br>
         <select name="Pants">
-          <option value="Please Select">Choose a pair of pants!(:</option>
+          <option value="0">Choose a pair of pants!(:</option>
           <option value="25.00">Black KU Joggers $25.00</option>
           <option value="16.00">Grey KU sweatpants $16.00</option>
           <option value="18.00">Dark Blue KU sweapants $18.00</option>
@@ -63,7 +63,7 @@
           SELECTION:
           <br>
         <select name="Jerseys">
-          <option value="Please Select">Choose a Jersey!(:</option>
+          <option value="0">Choose a Jersey!(:</option>
           <option value="25.00">Black KU Joggers $25.00</option>
           <option value="16.00">Grey KU sweatpants $16.00</option>
           <option value="18.00">Dark Blue KU sweapants $18.00</option>
@@ -73,13 +73,13 @@
         <br>
         <b><h3> Shipping: </h3> </b>
         <!-- <form id="m_form" > -->
-          Email ad:  <input type="text" name="gimmead" id="eadd" <br> <br>
-          Password:   <input type="password" name="pas" id="pass" <br> <br>
+          Email ad:  <input type="text" onfocusout="addressChecker()" name="gimmead" id="eadd" <br> <br>
+          Password:   <input type="password" onfocusout="passwordChecker()" name="pas" id="pass" <br> <br>
           <!-- </form>
           <form action="" method="post"> -->
-          <input type="radio" name="free" value="7Day" id="7"> Free 7 Day  <br>
+          <input type="radio" name="free" value="7Day" id="0"> Free 7 Day  <br>
           <input type="radio" name="free" value="OverNight" id="50"> $50.00 over night  <br>
-          <input type="radio" name="free" value="three" id="3"> $5.00 three day  <br>
+          <input type="radio" name="free" value="three" id="5"> $5.00 three day  <br>
           <!-- </form> -->
 
         <input type="submit" name="submit" onclick="addressChecker(); passwordChecker(); shippingChecker();">   <button type="reset" value="Reset" onclick="resetShipping()">Reset</button> <br>
